@@ -1,0 +1,73 @@
+.app_client_container {
+	margin-top: 30px;
+	display: grid;
+	width: 500px;
+	gap: 30px;
+	column-gap: 50px;
+	grid-template-areas:
+		"title"
+		"side"
+		"description";
+}
+
+.app_title {
+	grid-area: title;
+	border-bottom: 3px solid rgba(81, 142, 240, 0.8);
+	border-radius: 3px;
+	padding: 15px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.app_title .app_name {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.app_title .app_version {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.go_back_button {
+	grid-area: button;
+	margin: 0px;
+	align-self: auto;
+}
+.go_back_button button {
+	margin: 0px;
+}
+
+.advanced_info {
+	grid-area: side;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.advanced_info .info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.advanced_info .url button {
+	margin: 0px;
+}
+
+.side_element .header {
+	font-size: 12px;
+}
+
+.side_element div:nth-child(2) {
+	font-weight: 500;
+}
+
+.app_description {
+	grid-area: description;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}

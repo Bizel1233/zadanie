@@ -1,0 +1,200 @@
+.client_apps_container {
+	padding: 15px;
+	margin: 30px;
+	margin-bottom: 50px;
+	width: 800px;
+}
+
+.active_filters {
+	flex-wrap: wrap;
+	max-width: 750px;
+	display: flex;
+	gap: 10px;
+	min-height: 31px;
+	margin-bottom: 20px;
+}
+
+.active_filters > div {
+	background-color: #518ef0;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 15px;
+}
+
+.active_filters .filter_position {
+	display: flex;
+	cursor: pointer;
+	gap: 10px;
+}
+
+.client_app_input {
+	background-color: rgba(0, 0, 0, 0.25);
+	width: auto;
+	height: 25px;
+	color: white;
+	border: none;
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 8px;
+	padding-left: 6px;
+}
+
+.client_app_input:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.client_app_input:focus-visible {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.add_client_app_button {
+	margin: 0px;
+}
+
+.page_menu {
+	margin-bottom: 5px;
+}
+
+.item_per_page_select {
+	width: 45px;
+	height: 25px;
+	padding: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	font-size: 14px;
+	outline: none;
+	cursor: pointer;
+}
+
+.item_per_page_select:hover {
+	border-color: #fff;
+}
+
+.select_page {
+	display: flex;
+	gap: 5px;
+	align-items: flex-end;
+	justify-items: center;
+}
+
+.select_page .button_page {
+	width: 25px;
+	height: 25px;
+	display: flex;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	background-color: #333;
+	font-size: 14px;
+	margin: 0;
+}
+
+.select_page input.button_page {
+	width: 19px;
+	height: 21px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+
+.select_page .current_page {
+	border: 2px solid rgba(81, 142, 240, 0.8);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.table {
+	border: 2px solid rgba(0, 0, 0, 0.15);
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+.client_apps_rows {
+	display: grid;
+}
+
+.client_apps_row {
+	font-size: 14px;
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr 1fr;
+	padding: 10px;
+	padding: 10px 20px;
+	align-items: center;
+}
+
+.client_apps_row a,
+.client_apps_row > div {
+	width: 100%;
+	overflow: hidden;
+	height: 20px;
+}
+
+.client_apps_row_headers {
+	background-color: rgba(0, 0, 0, 0.4);
+	font-weight: bold;
+	align-items: center;
+	height: 60px;
+	border: none;
+}
+
+.client_apps_row_headers > div {
+	cursor: pointer;
+}
+
+.record:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.record:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.record_url {
+	display: flex;
+	flex-direction: row;
+}
+
+.record_url a:nth-child(1) {
+	width: auto;
+	padding-right: 10px;
+}
+
+.button:hover {
+	opacity: 1;
+}
+.button {
+	opacity: 0.75;
+}
+
+.logout_button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.end_page_menu {
+	margin-top: 5px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media (max-width: 1080px) {
+	.client_apps_container {
+		margin: 0px;
+	}
+
+	.client_apps_container {
+		padding-bottom: 60px;
+		position: relative;
+	}
+
+	.logout_button {
+		bottom: 10px;
+		right: 15px;
+		position: absolute;
+	}
+}

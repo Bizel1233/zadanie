@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #212121;
+	color: #ffffff;
+}
+
+input:focus-visible {
+	outline: none;
+}
+
+input[type="number"].remove_arrow::-webkit-inner-spin-button,
+input[type="number"].remove_arrow::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+button {
+	background-color: rgba(81, 142, 240, 0.8);
+	border: none;
+	outline: none;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgba(81, 142, 240, 1);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.margin-bot-15 {
+	margin-bottom: 15px;
+}
+
+.h25 {
+	height: 25px;
+}
+
+.w25 {
+	width: 25px;
+}
+
+.font-12 {
+	font-size: 12px;
+}
+
+.font-14 {
+	font-size: 14px;
+}
+
+.opacity-08 {
+	opacity: 0.8;
+}
+
+.App {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.input_error {
+	border-color: rgb(219, 68, 68, 0.9) !important;
+}
+
+.error_message {
+	height: 16px;
+	font-size: 12px;
+	font-weight: 300;
+	color: rgb(219, 68, 68, 0.9);
+}
+
+.huge_input {
+	color: white;
+	background-color: transparent;
+	width: 300px;
+	height: 10px;
+	border: none;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 15px;
+}
+
+.huge_input:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.huge_input:focus-visible {
+	background-color: rgba(0, 0, 0, 0.3);
+}

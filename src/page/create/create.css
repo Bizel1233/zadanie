@@ -1,0 +1,87 @@
+textarea.huge_input {
+	min-height: 50px;
+	max-height: 154px;
+	font-size: 12px;
+	width: 320px;
+	padding: 5px;
+	resize: none;
+}
+
+.create_container {
+	width: 400px;
+	height: 800px;
+	max-height: 904px;
+	margin-top: 50px;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input_description {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.create_button_container {
+	margin: 15px 0px;
+}
+
+.go_back_button {
+	height: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	align-self: flex-end;
+}
+
+.go_back_button button {
+	height: 30px;
+	padding: 0 10px;
+}
+
+.create_logout_button {
+	position: fixed;
+}
+
+@media (max-width: 600px) {
+	.create_container {
+		width: 100vw;
+		min-height: 100vh;
+		margin: 0px;
+		border-radius: 0px;
+		padding-bottom: 20px;
+		position: relative;
+	}
+
+	.create_logout_button {
+		position: absolute;
+	}
+
+	.go_back_button {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 300px) {
+	textarea.huge_input {
+		width: 240px;
+	}
+
+	.create_container {
+		width: 100vw;
+		margin: 0px;
+		border-radius: 0px;
+		padding-bottom: 20px;
+	}
+
+	.create_container > div {
+		max-width: 254px;
+	}
+
+	.huge_input {
+		width: 220px;
+	}
+}
